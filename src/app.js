@@ -23,9 +23,8 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Chris"
+    name: "Chris Hunter-Johnson"
   }); // hbs viws and attributes included in the view
-  //   res.send("<h1>Weather app</h1>");
 });
 
 // for help page
@@ -35,7 +34,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     title: "Help",
-    name: "Chris",
+    name: "Chris Hunter-Johnson",
     message: "Help message"
   });
 });
@@ -44,7 +43,7 @@ app.get("/about", (req, res) => {
   //  res.send("<h1>About weather app </h1>");
   res.render("about", {
     title: "About",
-    name: "Chris"
+    name: "Chris Hunter-Johnson"
   });
 });
 
@@ -92,7 +91,7 @@ app.get("/help/*", (req, res) => {
   // help child page not found
   res.render("404", {
     title: "Help Article error",
-    name: "Chris",
+    name: "Chris Hunter-Johnson",
     nfMessage: "Help article not found "
   });
 });
@@ -101,7 +100,7 @@ app.get("*", (req, res) => {
   // catch all if not matched above
   res.render("404", {
     title: "Page not found",
-    name: "Chris",
+    name: "Chris Hunter-Johnson",
     nfMessage: "Page not found "
   });
 });
